@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/welcome.css">
+	<title>welcome page</title>
+</head>
+
+<body>
+<section id="page1">
+    <div class="bg-img">
+      <div class="container">
+        <div class="topnav">
+          <a href="#about">About</a>
+          <a href="#home">Login</a>
+          <a href="#news">Signup</a>
+          <b href="#welcome">Logo pake gambar</b>          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="page2">
+    <div class="bg-img2"> </div>
+</section>
+
+<div class="container2">
+  <div id="topnav2">
+    <a href="#about">About</a>
+    <a href="#home">Login</a>
+    <a href="#news">Signup</a>
+    <b href="#welcome">Logo pake gambar</b>          
+  </div>
+</div>
+<script>
+     // When the user scrolls down 20px from the top of the document, slide down the navbar
+     window.onscroll = function() {scrollFunction()};
+
+     function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+       document.getElementById("topnav2").style.top = "0";
+      } else {
+        document.getElementById("topnav2").style.top = "-50px";
+        }
+      }
+    </script>
+
+</body>
+</html>
