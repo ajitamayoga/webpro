@@ -32,11 +32,16 @@ nav ul{
 	padding: 10% 10% !important;
 	text-decoration: none;
 	color: #47C1BF;
+	border-bottom: 2px solid;
 }
 
 .nav-link:hover{
 	background-color: #b7ecec;
 	color: black;
+}
+
+.cust{
+	color: white;
 }
 
 .active{
