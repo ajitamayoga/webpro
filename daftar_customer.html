@@ -7,8 +7,9 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
 	<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
-	<script src="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
 </head>
 <body>
 	<nav class="col-4">
@@ -33,8 +34,33 @@
 	</nav>
 
 
-	<div class="col-8 content">
-
+	<div class="container col-8 content">
+		<h2>DATA CUSTOMER</h2>
+		<table id="tab-customer" class="display" width="100%">
+			<thead>
+				<tr>
+					<th>Nama</th>
+					<th>NIK</th>
+					<th>Tanggal lahir</th>
+					<th>Alamat email</th>
+					<th>Nomor telepon</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>haha</td>
+					<td>12345</td>
+					<td>05-05-05</td>
+					<td>haha@gmail.com</td>
+					<td>123456789</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#tab-customer").DataTable();
+		})
+	</script>
 </body>
 </html>
